@@ -1,4 +1,5 @@
-import { Container, Box, Text, Flex } from "@radix-ui/themes";
+import { Container, Box, Text, Flex, IconButton } from "@radix-ui/themes";
+import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import { styled } from "@stitches/react";
 
 const BoxHeader = styled(Container, {
@@ -53,9 +54,9 @@ const Header = () => {
             alignItems: "center",
           }}
         >
-          <Text as="div" size="3">
-            Icon Area
-          </Text>
+          <IconButton mr="2">
+            <MagnifyingGlassIcon width="18" height="18" />
+          </IconButton>
         </Box>
       </Flex>
     </BoxHeader>
